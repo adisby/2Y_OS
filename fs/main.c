@@ -605,6 +605,8 @@ PRIVATE int fs_fork()
 {
 	int i;
 	struct proc* child = &proc_table[fs_msg.PID];
+	child->pwd->i_cnt++;
+	child->root->i_cnt++;
 	for (i = 0; i < NR_FILES; i++) {
 		if (child->filp[i]) {
 			child->filp[i]->fd_cnt++;
@@ -628,9 +630,13 @@ PRIVATE int fs_exit()
 {
 	int i;
 	struct proc* p = &proc_table[fs_msg.PID];
-	assert(NULL != p->pwd && NULL != p->root);
-	p->pwd->i_cnt--;
-	p->root->i_cnt--;
+	assert(NULL != p->pwd 
+        && NULL != p->root
+        && p->pwd->i_cnt > 0
+        && p->root->i_cnt > 0);
+
+	put_inode(p->pwd);
+	put_inode(p->root);
 	for (i = 0; i < NR_FILES; i++) {
 		if (p->filp[i]) {
 			/* release the inode */

@@ -70,12 +70,12 @@ do_chdir ()
 		struct proc * change_to_proc = &proc_table[fs_msg.PROC_NR];
 
 		assert(NULL != change_to_proc->root);
-		p_proc_ready->root->i_cnt--;
+		put_inode(p_proc_ready->root);
 		change_to_proc->root->i_cnt++;
 		p_proc_ready->root = change_to_proc->root;
 
 		assert(NULL != change_to_proc->pwd);
-		p_proc_ready->pwd->i_cnt--;
+		put_inode(p_proc_ready->pwd);
 		change_to_proc->pwd->i_cnt++;
 		p_proc_ready->pwd = change_to_proc->pwd;
 

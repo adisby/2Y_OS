@@ -74,11 +74,11 @@ buildimg :
 	dd if=boot/hdboot.bin of=$(HD) seek=510 skip=510 bs=1 count=2 conv=notrunc
 #	dd if=boot/hdboot.bin of=$(HD) seek=`echo "obase=10;ibase=16;\`egrep -e '^ROOT_BASE' boot/include/load.inc | sed -e 's/.*0x//g'\`*200" | bc` bs=1 count=446 conv=notrunc
 #	dd if=boot/hdboot.bin of=$(HD) seek=`echo "obase=10;ibase=16;\`egrep -e '^ROOT_BASE' boot/include/load.inc | sed -e 's/.*0x//g'\`*200+1FE" | bc` skip=510 bs=1 count=2 conv=notrunc
-	sudo mount -o loop $(FD) /mnt/floppy/
-	sudo cp -fv boot/loader.bin /mnt/floppy/
+	mount -o loop $(FD) /mnt/floppy/
+	cp -fv boot/loader.bin /mnt/floppy/
 	strip kernel.bin -o kernel.bin.stripped
-	sudo cp -fv kernel.bin.stripped /mnt/floppy/kernel.bin
-	sudo umount /mnt/floppy
+	cp -fv kernel.bin.stripped /mnt/floppy/kernel.bin
+	umount /mnt/floppy
 
 boot/boot.bin : boot/boot.asm boot/include/load.inc boot/include/fat12hdr.inc
 	$(ASM) $(ASMBFLAGS) -o $@ $<
