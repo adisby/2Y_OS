@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/2Y_OS/!svn/ver/17/branches/b/fs
+END
+ls.c
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/2Y_OS/!svn/ver/19/branches/b/fs/ls.c
+END
+open.c
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/2Y_OS/!svn/ver/22/branches/b/fs/open.c
+END
+fs_stat.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/2Y_OS/!svn/ver/22/branches/b/fs/fs_stat.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/2Y_OS/!svn/ver/22/branches/b/fs/main.c
+END
+read_write.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/2Y_OS/!svn/ver/22/branches/b/fs/read_write.c
+END
+ls.o
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/2Y_OS/!svn/ver/21/branches/b/fs/ls.o
+END
+misc.c
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/2Y_OS/!svn/ver/22/branches/b/fs/misc.c
+END
+disklog.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/2Y_OS/!svn/ver/22/branches/b/fs/disklog.c
+END
+link.c
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/2Y_OS/!svn/ver/22/branches/b/fs/link.c
+END

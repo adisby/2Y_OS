@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/2Y_OS/!svn/ver/13/branches/b/boot
+END
+boot.asm
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/2Y_OS/!svn/ver/13/branches/b/boot/boot.asm
+END
+hdldr.bin
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/2Y_OS/!svn/ver/13/branches/b/boot/hdldr.bin
+END
+loader.asm
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/2Y_OS/!svn/ver/13/branches/b/boot/loader.asm
+END
+hdboot.bin
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/2Y_OS/!svn/ver/13/branches/b/boot/hdboot.bin
+END
+boot.bin
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/2Y_OS/!svn/ver/13/branches/b/boot/boot.bin
+END
+hdldr.asm
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/2Y_OS/!svn/ver/13/branches/b/boot/hdldr.asm
+END
+loader.bin
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/2Y_OS/!svn/ver/13/branches/b/boot/loader.bin
+END
+hdboot.asm
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/2Y_OS/!svn/ver/13/branches/b/boot/hdboot.asm
+END

@@ -1,0 +1,41 @@
+/*************************************************************************//**
+ *****************************************************************************
+ * @file   ls.c
+ * @brief  ls()
+ * @author 2Y_OS
+ * @date   2012
+ *****************************************************************************
+ *****************************************************************************/
+#include "config.h"
+#include "type.h"
+#include "stdio.h"
+#include "const.h"
+#include "protect.h"
+#include "string.h"
+#include "fs.h"
+#include "proc.h"
+#include "tty.h"
+#include "console.h"
+#include "global.h"
+#include "keyboard.h"
+#include "proto.h"
+
+
+/*****************************************************************************
+ *                                ls
+ *****************************************************************************/
+/**
+ * display all the files under the directory.
+ *
+ * now the file system just have root directory
+ * so 'ls' just concentrate on the '/' directory
+ * 
+ *****************************************************************************/
+PUBLIC void ls ()
+{
+	MESSAGE msg;
+
+	msg.type	= LS;
+
+	send_recv(BOTH, TASK_FS, &msg);
+}

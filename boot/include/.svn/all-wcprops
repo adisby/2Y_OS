@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/2Y_OS/!svn/ver/13/branches/b/boot/include
+END
+fat12hdr.inc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/2Y_OS/!svn/ver/13/branches/b/boot/include/fat12hdr.inc
+END
+pm.inc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/2Y_OS/!svn/ver/13/branches/b/boot/include/pm.inc
+END
+load.inc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/2Y_OS/!svn/ver/13/branches/b/boot/include/load.inc
+END

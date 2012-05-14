@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/2Y_OS/!svn/ver/18/branches/b
+END
+80m.img
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/2Y_OS/!svn/ver/22/branches/b/80m.img
+END
+kernel.bin.stripped
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/2Y_OS/!svn/ver/22/branches/b/kernel.bin.stripped
+END
+krnl.map
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/2Y_OS/!svn/ver/22/branches/b/krnl.map
+END
+bochsrc
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/2Y_OS/!svn/ver/19/branches/b/bochsrc
+END
+bochsout.txt
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/2Y_OS/!svn/ver/24/branches/b/bochsout.txt
+END
+reinstall.sh
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/2Y_OS/!svn/ver/23/branches/b/reinstall.sh
+END
+kernel.bin
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/2Y_OS/!svn/ver/22/branches/b/kernel.bin
+END
+a.img
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/2Y_OS/!svn/ver/22/branches/b/a.img
+END
+xxd.sh
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/2Y_OS/!svn/ver/23/branches/b/xxd.sh
+END
+grubinst
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/2Y_OS/!svn/ver/13/branches/b/grubinst
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/2Y_OS/!svn/ver/19/branches/b/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/2Y_OS/!svn/ver/20/branches/b/README
+END
+80m.img.back
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/2Y_OS/!svn/ver/20/branches/b/80m.img.back
+END
+tags
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/2Y_OS/!svn/ver/22/branches/b/tags
+END

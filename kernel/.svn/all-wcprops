@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/2Y_OS/!svn/ver/15/branches/b/kernel
+END
+keyboard.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/2Y_OS/!svn/ver/19/branches/b/kernel/keyboard.c
+END
+global.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/2Y_OS/!svn/ver/19/branches/b/kernel/global.c
+END
+systask.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/2Y_OS/!svn/ver/19/branches/b/kernel/systask.c
+END
+console.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/2Y_OS/!svn/ver/19/branches/b/kernel/console.c
+END
+proc.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/2Y_OS/!svn/ver/19/branches/b/kernel/proc.c
+END
+kernel.asm
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/2Y_OS/!svn/ver/13/branches/b/kernel/kernel.asm
+END
+tty.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/2Y_OS/!svn/ver/19/branches/b/kernel/tty.c
+END
+protect.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/2Y_OS/!svn/ver/19/branches/b/kernel/protect.c
+END
+kliba.asm
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/2Y_OS/!svn/ver/13/branches/b/kernel/kliba.asm
+END
+i8259.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/2Y_OS/!svn/ver/19/branches/b/kernel/i8259.c
+END
+klib.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/2Y_OS/!svn/ver/19/branches/b/kernel/klib.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/2Y_OS/!svn/ver/22/branches/b/kernel/main.c
+END
+hd.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/2Y_OS/!svn/ver/19/branches/b/kernel/hd.c
+END
+clock.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/2Y_OS/!svn/ver/19/branches/b/kernel/clock.c
+END
+start.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/2Y_OS/!svn/ver/19/branches/b/kernel/start.c
+END

@@ -1,0 +1,268 @@
+/*************************************************************************//**
+ *****************************************************************************
+ * @file   misc.c
+ * @brief  
+ * @author Forrest Y. Yu
+ * @date   2008
+ *****************************************************************************
+ *****************************************************************************/
+
+/* Orange'S FS */
+
+#include "type.h"
+#include "stdio.h"
+#include "const.h"
+#include "protect.h"
+#include "string.h"
+#include "fs.h"
+#include "mm.h"
+#include "dirent.h"
+#include "unistd.h"
+#include "stdlib.h"
+#include "proc.h"
+#include "tty.h"
+#include "console.h"
+#include "global.h"
+#include "keyboard.h"
+#include "proto.h"
+#include "hd.h"
+
+PRIVATE int find_entry (struct inode * dir_inode, char * entry_name);
+
+/*****************************************************************************
+ *                                do_stat
+ *************************************************************************//**
+ * Perform the stat() syscall.
+ * 
+ * @return  On success, zero is returned. On error, -1 is returned.
+ *****************************************************************************/
+PUBLIC int do_stat()
+{
+	char pathname[MAX_PATH]; /* parameter from the caller */
+	char filename[MAX_PATH]; /* directory has been stipped */
+
+	/* get parameters from the message */
+	int name_len = fs_msg.NAME_LEN;	/* length of filename */
+	int src = fs_msg.source;	/* caller proc nr. */
+	assert(name_len < MAX_PATH);
+	phys_copy((void*)va2la(TASK_FS, pathname),    /* to   */
+		  (void*)va2la(src, fs_msg.PATHNAME), /* from */
+		  name_len);
+	pathname[name_len] = 0;	/* terminate the string */
+
+	int d_ino = search_file(pathname);
+	if (d_ino == INVALID_INODE) {	/* file not found */
+//		printl("{FS} FS::do_stat():: search_file() returns "
+//		       "invalid inode: %s\n", pathname);
+		return -1;
+	}
+
+	struct inode * pin = 0;
+
+	struct inode * dir_inode;
+	/* get the start path */
+	if ('/' != pathname[0]) {
+		dir_inode = root_inode;
+	} else {
+		dir_inode = root_inode;
+	}
+
+	if (strip_path(filename, pathname, &dir_inode) != 0) {
+		/* theoretically never fail here
+		 * (it would have failed earlier when
+		 *  search_file() was called)
+		 */
+		assert(0);
+	}
+	pin = get_inode(dir_inode->i_dev, d_ino);
+
+	struct stat s;		/* the thing requested */
+	s.st_dev = pin->i_dev;
+	s.st_ino = pin->i_num;
+	s.st_mode= pin->i_mode;
+	s.st_rdev= is_special(pin->i_mode) ? pin->i_zone[DEV_ZONE]: NO_DEV;
+	s.st_size= pin->i_size;
+
+	put_inode(pin);
+
+	phys_copy((void*)va2la(src, fs_msg.BUF), /* to   */
+		  (void*)va2la(TASK_FS, &s),	 /* from */
+		  sizeof(struct stat));
+
+	return 0;
+}
+
+
+/* 
+ * ===  FUNCTION  ======================================================================
+ *         Name:  find_entry
+ *  Description:  get the entry_name from the inode
+ *  @param inode: the inode of the directory
+ *  @param entry_name: the entry's name
+ *  @return:	  the entry's inode
+ * =====================================================================================
+ */
+	int
+find_entry ( struct inode * dir_inode, char * entry_name )
+{
+	int i, j;
+
+	/* get the imode of the inode */
+	int imode = dir_inode->i_mode & I_TYPE_MASK;
+	if (I_DIRECTORY != imode) {
+		/* the file type is not correct */
+		return INVALID_INODE;
+	}
+
+	/**
+	 * Search the dir for the file.
+	 */
+	int nr_dir_blks = (dir_inode->i_size + SECTOR_SIZE - 1) / SECTOR_SIZE;
+	int nr_dir_entries =
+	  dir_inode->i_size / DIRENT_SIZE; /**
+					       * including unused slots
+					       * (the file has been deleted
+					       * but the slot is still there)
+					       */
+	int m = 0;
+	struct dirent * pde;
+	for (i = 0; i < nr_dir_blks; i++) {
+		RD_SECT(dir_inode->i_dev, dir_inode->i_zone[i]);
+		pde = (struct dirent *)fsbuf;
+		for (j = 0; j < SECTOR_SIZE / DIRENT_SIZE; j++,pde++) {
+			if (strcmp(entry_name, pde->d_name) == 0)
+				return pde->d_ino;
+			if (++m > nr_dir_entries)
+				break;
+		}
+		if (m > nr_dir_entries) /* all entries have been iterated */
+			break;
+	}
+
+	/* the entry is not found */
+	return 0;
+}		/* -----  end of function find_entry  ----- */
+
+/*****************************************************************************
+ *                                search_file
+ *****************************************************************************/
+/**
+ * Search the file and return the d_ino.
+ *
+ * @param[in] path The full path of the file to search.
+ * @return         Ptr to the i-node of the file if successful, otherwise zero.
+ * 
+ * @see open()
+ * @see do_open()
+ *****************************************************************************/
+PUBLIC int search_file(char * path)
+{
+//	printl("{FS misc}start to search file\n");
+	char filename[MAX_PATH];
+	memset(filename, 0, MAX_FILENAME_LEN);
+
+	/* get the inode where search begin */
+	struct inode * dir_inode;
+	int d_ino = INVALID_INODE;
+    int src = fs_msg.source;    /* caller proc nr. */
+	struct proc * p = &proc_table[src];
+	if (path[0] == '/') {
+		dir_inode = p->root;
+		if ('\0' == path[1]) {
+			return ROOT_INODE;
+		}
+	} else {
+		dir_inode = p->pwd;
+	}
+//	printl("{FS misc}got the started directory\n");
+
+	while (*path != '\0') {
+		if (strip_path(filename, path, &dir_inode) != 0)
+			return INVALID_INODE;
+//		printl("{FS misc}strip_path ok\n");
+
+		/* get the next path */
+		if ('/' == *path) {
+			/* skip the root notation */
+			path++;
+		}
+//		printl("{FS misc}skip notation\n");
+
+		d_ino = find_entry(dir_inode, filename); 
+		if (!d_ino) {
+			/* if the file is not exist or it is not a directory */
+			return INVALID_INODE;
+		}
+//		printl("{FS misc}get current d_ino\n");
+
+		dir_inode = get_inode(dir_inode->i_dev, d_ino);
+//		printl("{FS misc}get current inode\n");
+
+		for (;*path != '\0' && *path != '/';path++);
+//		printl("{FS misc}skip file name\n");
+
+		//release the inode
+		put_inode(dir_inode);
+
+		if (filename[0] == 0)	/* path: "/" */
+			return dir_inode->i_num;
+	}
+//	printl("{FS misc}search file ok\n");
+	return d_ino; 
+}
+
+/*****************************************************************************
+ *                                strip_path
+ *****************************************************************************/
+/**
+ * Get the basename from the fullpath.
+ *
+ * In Orange'S FS v1.0, all files are stored in the root directory.
+ * There is no sub-folder thing.
+ *
+ * This routine should be called at the very beginning of file operations
+ * such as open(), read() and write(). It accepts the full path and returns
+ * two things: the basename and a ptr of the root dir's i-node.
+ *
+ * e.g. After stip_path(filename, "/blah", ppinode) finishes, we get:
+ *      - filename: "blah"
+ *      - *ppinode: root_inode
+ *      - ret val:  0 (successful)
+ *
+ * Currently an acceptable pathname should begin with at most one `/'
+ * preceding a filename.
+ *
+ * Filenames may contain any character except '/' and '\\0'.
+ *
+ * @param[out] filename The string for the result.
+ * @param[in]  pathname The full pathname.
+ * @param[out] ppinode  The ptr of the dir's inode will be stored here.
+ * 
+ * @return Zero if success, otherwise the pathname is not valid.
+ *****************************************************************************/
+PUBLIC int strip_path(char * filename, const char * pathname,
+		struct inode** ppinode)
+{
+	const char * s = pathname;
+	char * t = filename;
+
+	if (s == 0)
+		return INVALID_INODE;
+
+	if (*s == '/') {
+		s++;
+	}
+
+	while (*s) {		/* check each character */
+		if (*s == '/')
+			break;
+		*t++ = *s++;
+		/* if filename is too long, just truncate it */
+		if (t - filename >= MAX_FILENAME_LEN)
+			break;
+	}
+	*t = 0;
+
+	return 0;
+}
+

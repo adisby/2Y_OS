@@ -1,0 +1,77 @@
+/*
+ * =====================================================================================
+ *
+ *       Filename:  readdir.c
+ *
+ *    Description:  the c source file of readdir
+ *
+ *        Version:  1.0
+ *        Created:  2012年02月28日 02时04分45秒
+ *       Revision:  none
+ *       Compiler:  gcc
+ *
+ *         Author:  adisby (), adisbyPD@gmail.com
+ *        Company:  2Y_OS
+ *
+ * =====================================================================================
+ */
+
+#include "type.h"
+#include "stdio.h"
+#include "const.h"
+#include "protect.h"
+#include "string.h"
+#include "fs.h"
+#include "dirent.h"
+#include "unistd.h"
+#include "stdlib.h"
+#include "proc.h"
+#include "tty.h"
+#include "console.h"
+#include "global.h"
+#include "proto.h"
+
+/**
+ * @def   nil
+ * @brief the null pointer
+ * @see	  
+ */
+#define	nil 0
+
+/* 
+ * ===  FUNCTION  ======================================================================
+ *         Name:  readdir
+ *  Description:  read the next entry of the directory
+ *  @param __dirp:the directory file stream
+ *  @return :	  directory entry 
+ * =====================================================================================
+ */
+PUBLIC struct dirent *
+readdir (DIR * __dirp)
+{
+	if (nil == __dirp) {
+		return nil;
+	}
+
+	struct dirent * entry;
+
+//	do {
+		if (__dirp->_count <= 0) {
+			/* Read the next directory block */
+			__dirp->_count = read(__dirp->_fd, __dirp->_buf, sizeof(__dirp->_buf));
+			if (__dirp->_count <= 0) {
+				return nil;
+			}
+
+			__dirp->_count /= sizeof(__dirp->_buf[0]);
+			__dirp->_ptr = __dirp->_buf;
+		}
+
+		entry = (struct dirent *) __dirp->_ptr;
+		__dirp->_ptr += 1;
+		__dirp->_count -= 1;
+		__dirp->_pos += sizeof(*entry);
+
+//	} while (entry->d_ino == 0);
+	return entry;
+}		/* -----  end of function readdir  ----- */

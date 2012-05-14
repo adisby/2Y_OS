@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/2Y_OS/!svn/ver/18/branches/b/command
+END
+cd
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/2Y_OS/!svn/ver/22/branches/b/command/cd
+END
+kernel.bin
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/2Y_OS/!svn/ver/22/branches/b/command/kernel.bin
+END
+mkdir.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/2Y_OS/!svn/ver/21/branches/b/command/mkdir.c
+END
+pwd
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/2Y_OS/!svn/ver/22/branches/b/command/pwd
+END
+rm.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/2Y_OS/!svn/ver/21/branches/b/command/rm.c
+END
+echo.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/2Y_OS/!svn/ver/13/branches/b/command/echo.c
+END
+ls.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/2Y_OS/!svn/ver/19/branches/b/command/ls.c
+END
+inst.tar
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/2Y_OS/!svn/ver/22/branches/b/command/inst.tar
+END
+hdldr.bin
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/2Y_OS/!svn/ver/13/branches/b/command/hdldr.bin
+END
+mkdir
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/2Y_OS/!svn/ver/22/branches/b/command/mkdir
+END
+cd.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/2Y_OS/!svn/ver/21/branches/b/command/cd.c
+END
+pwd.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/2Y_OS/!svn/ver/13/branches/b/command/pwd.c
+END
+start.asm
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/2Y_OS/!svn/ver/13/branches/b/command/start.asm
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/2Y_OS/!svn/ver/22/branches/b/command/Makefile
+END
+ls
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/2Y_OS/!svn/ver/22/branches/b/command/ls
+END
+echo
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/2Y_OS/!svn/ver/22/branches/b/command/echo
+END
+rm
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/2Y_OS/!svn/ver/22/branches/b/command/rm
+END

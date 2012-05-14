@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/2Y_OS/!svn/ver/16/branches/b/lib
+END
+unlink.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/2Y_OS/!svn/ver/19/branches/b/lib/unlink.c
+END
+fork.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/2Y_OS/!svn/ver/19/branches/b/lib/fork.c
+END
+open.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/2Y_OS/!svn/ver/19/branches/b/lib/open.c
+END
+printf.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/2Y_OS/!svn/ver/19/branches/b/lib/printf.c
+END
+lseek.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/2Y_OS/!svn/ver/19/branches/b/lib/lseek.c
+END
+wait.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/2Y_OS/!svn/ver/19/branches/b/lib/wait.c
+END
+string.asm
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/2Y_OS/!svn/ver/13/branches/b/lib/string.asm
+END
+orangescrt.a
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/2Y_OS/!svn/ver/22/branches/b/lib/orangescrt.a
+END
+close.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/2Y_OS/!svn/ver/19/branches/b/lib/close.c
+END
+malloc.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/2Y_OS/!svn/ver/21/branches/b/lib/malloc.c
+END
+syscall.asm
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/2Y_OS/!svn/ver/13/branches/b/lib/syscall.asm
+END
+exit.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/2Y_OS/!svn/ver/19/branches/b/lib/exit.c
+END
+readdir.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/2Y_OS/!svn/ver/21/branches/b/lib/readdir.c
+END
+read.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/2Y_OS/!svn/ver/19/branches/b/lib/read.c
+END
+stat.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/2Y_OS/!svn/ver/19/branches/b/lib/stat.c
+END
+vsprintf.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/2Y_OS/!svn/ver/19/branches/b/lib/vsprintf.c
+END
+getpid.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/2Y_OS/!svn/ver/19/branches/b/lib/getpid.c
+END
+ls.c
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/2Y_OS/!svn/ver/16/branches/b/lib/ls.c
+END
+dir.c
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/2Y_OS/!svn/ver/21/branches/b/lib/dir.c
+END
+syslog.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/2Y_OS/!svn/ver/19/branches/b/lib/syslog.c
+END
+exec.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/2Y_OS/!svn/ver/19/branches/b/lib/exec.c
+END
+chdir.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/2Y_OS/!svn/ver/21/branches/b/lib/chdir.c
+END
+write.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/2Y_OS/!svn/ver/19/branches/b/lib/write.c
+END
+misc.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/2Y_OS/!svn/ver/19/branches/b/lib/misc.c
+END

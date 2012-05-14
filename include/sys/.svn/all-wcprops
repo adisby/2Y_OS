@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/2Y_OS/!svn/ver/15/branches/b/include/sys
+END
+hd.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/2Y_OS/!svn/ver/13/branches/b/include/sys/hd.h
+END
+sconst.inc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/2Y_OS/!svn/ver/13/branches/b/include/sys/sconst.inc
+END
+global.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/2Y_OS/!svn/ver/19/branches/b/include/sys/global.h
+END
+keyboard.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/2Y_OS/!svn/ver/13/branches/b/include/sys/keyboard.h
+END
+protect.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/2Y_OS/!svn/ver/13/branches/b/include/sys/protect.h
+END
+tty.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/2Y_OS/!svn/ver/13/branches/b/include/sys/tty.h
+END
+console.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/2Y_OS/!svn/ver/13/branches/b/include/sys/console.h
+END
+proc.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/2Y_OS/!svn/ver/19/branches/b/include/sys/proc.h
+END
+proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/2Y_OS/!svn/ver/19/branches/b/include/sys/proto.h
+END
+config.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/2Y_OS/!svn/ver/22/branches/b/include/sys/config.h
+END
+const.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/2Y_OS/!svn/ver/22/branches/b/include/sys/const.h
+END
+keymap.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/2Y_OS/!svn/ver/13/branches/b/include/sys/keymap.h
+END
+fs.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/2Y_OS/!svn/ver/22/branches/b/include/sys/fs.h
+END

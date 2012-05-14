@@ -1,0 +1,1482 @@
+Archive member included because of file (symbol)
+
+lib/orangescrt.a(printf.o)    kernel/main.o (printf)
+lib/orangescrt.a(vsprintf.o)  kernel/main.o (vsprintf)
+lib/orangescrt.a(string.o)    kernel/start.o (memcpy)
+lib/orangescrt.a(misc.o)      kernel/main.o (send_recv)
+lib/orangescrt.a(open.o)      kernel/main.o (open)
+lib/orangescrt.a(read.o)      kernel/main.o (read)
+lib/orangescrt.a(write.o)     kernel/main.o (write)
+lib/orangescrt.a(close.o)     kernel/main.o (close)
+lib/orangescrt.a(lseek.o)     kernel/main.o (lseek)
+lib/orangescrt.a(getpid.o)    kernel/main.o (getpid)
+lib/orangescrt.a(stat.o)      mm/exec.o (stat)
+lib/orangescrt.a(fork.o)      kernel/main.o (fork)
+lib/orangescrt.a(wait.o)      kernel/main.o (wait)
+lib/orangescrt.a(exec.o)      kernel/main.o (execv)
+lib/orangescrt.a(chdir.o)     kernel/main.o (chdir)
+lib/orangescrt.a(syscall.o)   lib/orangescrt.a(misc.o) (sendrec)
+
+Allocating common symbols
+Common symbol       size              file
+
+page_table          0xf000            kernel/global.o
+idt_ptr             0x6               kernel/global.o
+inode_table         0x1000            kernel/global.o
+task_stack          0x24000           kernel/global.o
+k_reenter           0x4               kernel/global.o
+gdt                 0x400             kernel/global.o
+mm_free_mem         0x4               kernel/global.o
+current_console     0x4               kernel/global.o
+pcaller             0x4               kernel/global.o
+tty_table           0xc6c             kernel/global.o
+tss                 0x68              kernel/global.o
+fs_msg              0x30              kernel/global.o
+memory_size         0x4               kernel/global.o
+f_desc_table        0x400             kernel/global.o
+root_inode          0x4               kernel/global.o
+disp_pos            0x4               kernel/global.o
+mm_msg              0x30              kernel/global.o
+key_pressed         0x4               kernel/global.o
+gdt_ptr             0x6               kernel/global.o
+idt                 0x800             kernel/global.o
+super_block         0x1e0             kernel/global.o
+PARTITION_ENTRY     0x10              kernel/hd.o
+ticks               0x4               kernel/global.o
+console_table       0x3c              kernel/global.o
+irq_table           0x40              kernel/global.o
+nr_page             0x4               kernel/global.o
+p_proc_ready        0x4               kernel/global.o
+proc_table          0x3f98            kernel/global.o
+
+Discarded input sections
+
+ .note.GNU-stack
+                0x0000000000000000        0x0 kernel/start.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 kernel/main.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 kernel/clock.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 kernel/keyboard.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 kernel/tty.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 kernel/console.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 kernel/i8259.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 kernel/global.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 kernel/protect.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 kernel/proc.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 kernel/systask.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 kernel/hd.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 kernel/klib.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 lib/syslog.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 mm/main.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 mm/forkexit.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 mm/exec.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 mm/memory.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 mm/break.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 fs/main.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 fs/open.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 fs/misc.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 fs/read_write.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 fs/link.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 fs/fs_stat.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 fs/disklog.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 lib/orangescrt.a(printf.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 lib/orangescrt.a(vsprintf.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 lib/orangescrt.a(misc.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 lib/orangescrt.a(open.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 lib/orangescrt.a(read.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 lib/orangescrt.a(write.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 lib/orangescrt.a(close.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 lib/orangescrt.a(lseek.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 lib/orangescrt.a(getpid.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 lib/orangescrt.a(stat.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 lib/orangescrt.a(fork.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 lib/orangescrt.a(wait.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 lib/orangescrt.a(exec.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 lib/orangescrt.a(chdir.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+Address of section .text set to 0x1000
+LOAD kernel/kernel.o
+LOAD kernel/start.o
+LOAD kernel/main.o
+LOAD kernel/clock.o
+LOAD kernel/keyboard.o
+LOAD kernel/tty.o
+LOAD kernel/console.o
+LOAD kernel/i8259.o
+LOAD kernel/global.o
+LOAD kernel/protect.o
+LOAD kernel/proc.o
+LOAD kernel/systask.o
+LOAD kernel/hd.o
+LOAD kernel/kliba.o
+LOAD kernel/klib.o
+LOAD lib/syslog.o
+LOAD mm/main.o
+LOAD mm/forkexit.o
+LOAD mm/exec.o
+LOAD mm/memory.o
+LOAD mm/break.o
+LOAD fs/main.o
+LOAD fs/open.o
+LOAD fs/misc.o
+LOAD fs/read_write.o
+LOAD fs/link.o
+LOAD fs/fs_stat.o
+LOAD fs/disklog.o
+LOAD lib/orangescrt.a
+                0x0000000008048000                PROVIDE (__executable_start, 0x8048000)
+                0x0000000008048094                . = (0x8048000 + SIZEOF_HEADERS)
+
+.interp
+ *(.interp)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash
+ *(.hash)
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.dyn        0x0000000008048094        0x0
+ *(.rel.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ .rel.text      0x0000000000000000        0x0 kernel/kernel.o
+ *(.rel.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rel.data.rel.ro* .rel.gnu.linkonce.d.rel.ro.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ .rel.data      0x0000000000000000        0x0 kernel/kernel.o
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rel.dtors)
+ *(.rel.got)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rel.ifunc)
+
+.rel.plt        0x0000000008048094        0x0
+ *(.rel.plt)
+                0x0000000008048094                PROVIDE (__rel_iplt_start, .)
+ *(.rel.iplt)
+ .rel.iplt      0x0000000000000000        0x0 kernel/kernel.o
+                0x0000000008048094                PROVIDE (__rel_iplt_end, .)
+
+.init
+ *(.init)
+
+.plt            0x0000000008048094        0x0
+ *(.plt)
+ *(.iplt)
+ .iplt          0x0000000000000000        0x0 kernel/kernel.o
+
+.text           0x0000000000001000     0xfca8
+ *(.text.unlikely .text.*_unlikely)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *(.text.hot .text.hot.*)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x0000000000001000      0x44f kernel/kernel.o
+                0x0000000000001000                _start
+                0x0000000000001040                hwint00
+                0x0000000000001070                hwint01
+                0x00000000000010a0                hwint02
+                0x00000000000010d0                hwint03
+                0x0000000000001100                hwint04
+                0x0000000000001130                hwint05
+                0x0000000000001160                hwint06
+                0x0000000000001190                hwint07
+                0x00000000000011c0                hwint08
+                0x00000000000011f0                hwint09
+                0x0000000000001220                hwint10
+                0x0000000000001250                hwint11
+                0x0000000000001280                hwint12
+                0x00000000000012b0                hwint13
+                0x00000000000012e0                hwint14
+                0x0000000000001310                hwint15
+                0x0000000000001334                divide_error
+                0x000000000000133d                single_step_exception
+                0x0000000000001346                nmi
+                0x000000000000134c                breakpoint_exception
+                0x0000000000001352                overflow
+                0x0000000000001358                bounds_check
+                0x000000000000135e                inval_opcode
+                0x0000000000001364                copr_not_available
+                0x000000000000136a                double_fault
+                0x000000000000136e                copr_seg_overrun
+                0x0000000000001374                inval_tss
+                0x0000000000001378                segment_not_present
+                0x000000000000137c                stack_exception
+                0x0000000000001380                general_protection
+                0x0000000000001384                page_fault
+                0x00000000000013c1                copr_error
+                0x000000000000140a                sys_call
+                0x000000000000142a                restart
+ *fill*         0x000000000000144f        0x1 90909090
+ .text          0x0000000000001450       0x99 kernel/start.o
+                0x0000000000001450                cstart
+ *fill*         0x00000000000014e9        0x3 90909090
+ .text          0x00000000000014ec      0xae8 kernel/main.o
+                0x00000000000014ec                kernel_main
+                0x0000000000001823                get_ticks
+                0x000000000000185b                untar
+                0x0000000000001b2e                shabby_shell
+                0x0000000000001daa                Init
+                0x0000000000001f72                TestA
+                0x0000000000001f77                TestB
+                0x0000000000001f7c                TestC
+                0x0000000000001f81                panic
+ .text          0x0000000000001fd4      0x119 kernel/clock.o
+                0x0000000000001fd4                clock_handler
+                0x000000000000204e                milli_delay
+                0x0000000000002089                init_clock
+ *fill*         0x00000000000020ed        0x3 90909090
+ .text          0x00000000000020f0      0x6d1 kernel/keyboard.o
+                0x00000000000020f0                keyboard_handler
+                0x0000000000002159                init_keyboard
+                0x0000000000002208                keyboard_read
+ *fill*         0x00000000000027c1        0x3 90909090
+ .text          0x00000000000027c4      0xa06 kernel/tty.o
+                0x00000000000027c4                task_tty
+                0x0000000000002978                in_process
+                0x0000000000002ec8                sys_printx
+                0x000000000000306f                dump_tty_buf
+ *fill*         0x00000000000031ca        0x2 90909090
+ .text          0x00000000000031cc      0x829 kernel/console.o
+                0x00000000000031cc                init_screen
+                0x0000000000003342                out_char
+                0x000000000000363f                is_current_console
+                0x0000000000003735                select_console
+                0x0000000000003775                scroll_screen
+ *fill*         0x00000000000039f5        0x3 90909090
+ .text          0x00000000000039f8      0x13c kernel/i8259.o
+                0x00000000000039f8                init_8259A
+                0x0000000000003ae9                spurious_irq
+                0x0000000000003b14                put_irq_handler
+ .text          0x0000000000003b34        0x0 kernel/global.o
+ .text          0x0000000000003b34      0xf76 kernel/protect.o
+                0x0000000000003b34                init_prot
+                0x000000000000418f                seg2linear
+                0x00000000000041de                init_desc
+                0x000000000000424a                exception_handler
+ *fill*         0x0000000000004aaa        0x2 90909090
+ .text          0x0000000000004aac     0x194e kernel/proc.o
+                0x0000000000004aac                schedule
+                0x0000000000004b37                sys_sendrec
+                0x0000000000004c96                ldt_seg_linear
+                0x0000000000004cda                va2la
+                0x0000000000004d47                reset_msg
+                0x0000000000005db9                inform_int
+                0x0000000000005f4d                dump_proc
+                0x00000000000062b3                dump_msg
+ *fill*         0x00000000000063fa        0x2 90909090
+ .text          0x00000000000063fc      0x2f4 kernel/systask.o
+                0x00000000000063fc                task_sys
+ .text          0x00000000000066f0      0xdb3 kernel/hd.o
+                0x00000000000066f0                task_hd
+                0x000000000000747e                hd_handler
+ *fill*         0x00000000000074a3        0xd 90909090
+ .text          0x00000000000074b0      0x19a kernel/kliba.o
+                0x00000000000074b0                disp_str
+                0x00000000000074ee                disp_color_str
+                0x000000000000752d                out_byte
+                0x0000000000007539                in_byte
+                0x0000000000007543                port_read
+                0x0000000000007556                port_write
+                0x0000000000007569                disable_irq
+                0x000000000000759e                enable_irq
+                0x00000000000075bd                disable_int
+                0x00000000000075bf                enable_int
+                0x00000000000075c1                glitter
+ *fill*         0x000000000000764a        0x2 90909090
+ .text          0x000000000000764c      0x2d8 kernel/klib.o
+                0x000000000000764c                get_boot_params
+                0x00000000000076ee                get_kernel_map
+                0x000000000000780f                itoa
+                0x00000000000078b9                disp_int
+                0x00000000000078de                delay
+ .text          0x0000000000007924       0x78 lib/syslog.o
+                0x0000000000007924                syslog
+ .text          0x000000000000799c      0x393 mm/main.o
+                0x000000000000799c                task_mm
+                0x0000000000007b5d                alloc_mem
+                0x0000000000007bc2                free_mem
+ *fill*         0x0000000000007d2f        0x1 90909090
+ .text          0x0000000000007d30      0x668 mm/forkexit.o
+                0x0000000000007d30                do_fork
+                0x0000000000008112                do_exit
+                0x00000000000082df                do_wait
+ .text          0x0000000000008398      0x536 mm/exec.o
+                0x00000000000083fa                do_exec
+                0x0000000000008843                initial_brk
+ *fill*         0x00000000000088ce        0x2 90909090
+ .text          0x00000000000088d0      0x730 mm/memory.o
+                0x0000000000008a4f                free_page_tables
+                0x0000000000008b50                do_no_page
+                0x0000000000008d2e                verify_area
+                0x0000000000008d72                do_wp_page
+                0x0000000000008e1c                copy_on_write
+ .text          0x0000000000009000       0x69 mm/break.o
+                0x0000000000009000                do_brk
+ *fill*         0x0000000000009069        0x3 90909090
+ .text          0x000000000000906c     0x13ca fs/main.o
+                0x000000000000906c                task_fs
+                0x0000000000009d5a                rw_sector
+                0x0000000000009fa1                get_super_block
+                0x0000000000009fe8                get_inode
+                0x000000000000a158                put_inode
+                0x000000000000a19d                sync_inode
+ *fill*         0x000000000000a436        0x2 90909090
+ .text          0x000000000000a438      0xecb fs/open.o
+                0x000000000000a438                do_open
+                0x000000000000a91b                do_mkdir
+                0x000000000000abfa                do_close
+                0x000000000000ac71                do_lseek
+ *fill*         0x000000000000b303        0x1 90909090
+ .text          0x000000000000b304      0x4f2 fs/misc.o
+                0x000000000000b304                do_stat
+                0x000000000000b617                search_file
+                0x000000000000b779                strip_path
+ *fill*         0x000000000000b7f6        0x2 90909090
+ .text          0x000000000000b7f8     0x18fd fs/read_write.o
+                0x000000000000c055                do_rdwt
+                0x000000000000cc5f                alloc_zone_for_cmd_tar
+ *fill*         0x000000000000d0f5        0x3 90909090
+ .text          0x000000000000d0f8      0x9c1 fs/link.o
+                0x000000000000d0f8                do_unlink
+ *fill*         0x000000000000dab9        0x3 90909090
+ .text          0x000000000000dabc      0x25b fs/fs_stat.o
+                0x000000000000dabc                do_chdir
+ *fill*         0x000000000000dd17        0x1 90909090
+ .text          0x000000000000dd18     0x2200 fs/disklog.o
+                0x000000000000dd18                disklog
+                0x000000000000e39a                dump_fd_graph
+ .text          0x000000000000ff18       0xc6 lib/orangescrt.a(printf.o)
+                0x000000000000ff18                printf
+                0x000000000000ff9a                printl
+ *fill*         0x000000000000ffde        0x2 90909090
+ .text          0x000000000000ffe0      0x31d lib/orangescrt.a(vsprintf.o)
+                0x000000000001004b                vsprintf
+                0x00000000000102d3                sprintf
+ *fill*         0x00000000000102fd        0x3 90909090
+ .text          0x0000000000010300       0x78 lib/orangescrt.a(string.o)
+                0x0000000000010300                memcpy
+                0x0000000000010329                memset
+                0x000000000001034a                strcpy
+                0x0000000000010362                strlen
+ .text          0x0000000000010378      0x298 lib/orangescrt.a(misc.o)
+                0x0000000000010378                send_recv
+                0x000000000001045f                memcmp
+                0x00000000000104d9                strcmp
+                0x0000000000010550                strcat
+                0x00000000000105af                spin
+                0x00000000000105ca                assertion_failure
+ .text          0x0000000000010610       0x73 lib/orangescrt.a(open.o)
+                0x0000000000010610                open
+ *fill*         0x0000000000010683        0x1 90909090
+ .text          0x0000000000010684       0x3f lib/orangescrt.a(read.o)
+                0x0000000000010684                read
+ *fill*         0x00000000000106c3        0x1 90909090
+ .text          0x00000000000106c4       0x3f lib/orangescrt.a(write.o)
+                0x00000000000106c4                write
+ *fill*         0x0000000000010703        0x1 90909090
+ .text          0x0000000000010704       0x33 lib/orangescrt.a(close.o)
+                0x0000000000010704                close
+ *fill*         0x0000000000010737        0x1 90909090
+ .text          0x0000000000010738       0x3f lib/orangescrt.a(lseek.o)
+                0x0000000000010738                lseek
+ *fill*         0x0000000000010777        0x1 90909090
+ .text          0x0000000000010778       0x59 lib/orangescrt.a(getpid.o)
+                0x0000000000010778                getpid
+ *fill*         0x00000000000107d1        0x3 90909090
+ .text          0x00000000000107d4       0xf4 lib/orangescrt.a(stat.o)
+                0x00000000000107d4                stat
+                0x0000000000010847                mkdir
+ .text          0x00000000000108c8       0x9e lib/orangescrt.a(fork.o)
+                0x00000000000108c8                fork
+ *fill*         0x0000000000010966        0x2 90909090
+ .text          0x0000000000010968       0x44 lib/orangescrt.a(wait.o)
+                0x0000000000010968                wait
+ .text          0x00000000000109ac      0x262 lib/orangescrt.a(exec.o)
+                0x00000000000109ac                exec
+                0x0000000000010a27                execl
+                0x0000000000010a4d                execv
+ *fill*         0x0000000000010c0e        0x2 90909090
+ .text          0x0000000000010c10       0x6d lib/orangescrt.a(chdir.o)
+                0x0000000000010c10                chdir
+ *fill*         0x0000000000010c7d        0x3 90909090
+ .text          0x0000000000010c80       0x28 lib/orangescrt.a(syscall.o)
+                0x0000000000010c80                sendrec
+                0x0000000000010c9a                printx
+ *(.gnu.warning)
+
+.fini
+ *(.fini)
+                0x0000000000010ca8                PROVIDE (__etext, .)
+                0x0000000000010ca8                PROVIDE (_etext, .)
+                0x0000000000010ca8                PROVIDE (etext, .)
+
+.rodata         0x0000000000010ca8     0x23f3
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x0000000000010ca8       0x47 kernel/start.o
+ *fill*         0x0000000000010cef        0x1 00
+ .rodata        0x0000000000010cf0      0x1e4 kernel/main.o
+ .rodata        0x0000000000010ed4       0x64 kernel/keyboard.o
+ .rodata        0x0000000000010f38      0x13c kernel/tty.o
+ .rodata        0x0000000000011074       0x5b kernel/console.o
+ .rodata        0x00000000000110cf       0x11 kernel/i8259.o
+ .rodata        0x00000000000110e0       0x10 kernel/global.o
+                0x00000000000110e0                FSBUF_SIZE
+                0x00000000000110e4                MMBUF_SIZE
+                0x00000000000110e8                LOGBUF_SIZE
+                0x00000000000110ec                LOGDISKBUF_SIZE
+ .rodata        0x00000000000110f0       0x65 kernel/protect.o
+ *fill*         0x0000000000011155        0x3 00
+ .rodata        0x0000000000011158      0x5da kernel/proc.o
+ .rodata        0x0000000000011732       0x11 kernel/systask.o
+ *fill*         0x0000000000011743        0x1 00
+ .rodata        0x0000000000011744      0x15c kernel/hd.o
+ .rodata        0x00000000000118a0       0x6a kernel/klib.o
+ .rodata        0x000000000001190a       0x1e lib/syslog.o
+ .rodata        0x0000000000011928      0x11b mm/main.o
+ *fill*         0x0000000000011a43        0x1 00
+ .rodata        0x0000000000011a44       0xec mm/forkexit.o
+ .rodata        0x0000000000011b30       0xb8 mm/exec.o
+ .rodata        0x0000000000011be8      0x12d mm/memory.o
+ *fill*         0x0000000000011d15        0x3 00
+ .rodata        0x0000000000011d18      0x292 fs/main.o
+ *fill*         0x0000000000011faa        0x2 00
+ .rodata        0x0000000000011fac      0x214 fs/open.o
+ .rodata        0x00000000000121c0       0x20 fs/misc.o
+ .rodata        0x00000000000121e0      0x21e fs/read_write.o
+ *fill*         0x00000000000123fe        0x2 00
+ .rodata        0x0000000000012400      0x1ad fs/link.o
+ *fill*         0x00000000000125ad        0x3 00
+ .rodata        0x00000000000125b0       0xa9 fs/fs_stat.o
+ *fill*         0x0000000000012659        0x3 00
+ .rodata        0x000000000001265c      0x806 fs/disklog.o
+ .rodata        0x0000000000012e62       0x14 lib/orangescrt.a(printf.o)
+ *fill*         0x0000000000012e76        0x2 00
+ .rodata        0x0000000000012e78       0xad lib/orangescrt.a(misc.o)
+ .rodata        0x0000000000012f25       0x23 lib/orangescrt.a(open.o)
+ .rodata        0x0000000000012f48       0x25 lib/orangescrt.a(getpid.o)
+ .rodata        0x0000000000012f6d       0x35 lib/orangescrt.a(stat.o)
+ .rodata        0x0000000000012fa2       0x4c lib/orangescrt.a(fork.o)
+ *fill*         0x0000000000012fee        0x2 00
+ .rodata        0x0000000000012ff0       0x87 lib/orangescrt.a(exec.o)
+ .rodata        0x0000000000013077       0x24 lib/orangescrt.a(chdir.o)
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+                0x000000000001309b                . = (ALIGN (0x1000) - ((0x1000 - .) & 0xfff))
+                0x000000000001409b                . = DATA_SEGMENT_ALIGN (0x1000, 0x1000)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x000000000001409b        0x0
+                0x000000000001409b                PROVIDE (__preinit_array_start, .)
+ *(.preinit_array)
+                0x000000000001409b                PROVIDE (__preinit_array_end, .)
+
+.init_array     0x000000000001409b        0x0
+                0x000000000001409b                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*))
+ *(.init_array)
+                0x000000000001409b                PROVIDE (__init_array_end, .)
+
+.fini_array     0x000000000001409b        0x0
+                0x000000000001409b                PROVIDE (__fini_array_start, .)
+ *(SORT(.fini_array.*))
+ *(.fini_array)
+                0x000000000001409b                PROVIDE (__fini_array_end, .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro* .gnu.linkonce.d.rel.ro.*)
+
+.dynamic
+ *(.dynamic)
+
+.got
+ *(.got)
+ *(.igot)
+                0x000000000001409b                . = DATA_SEGMENT_RELRO_END (., 0xc)
+
+.got.plt        0x000000000001409c        0x0
+ *(.got.plt)
+ *(.igot.plt)
+ .igot.plt      0x0000000000000000        0x0 kernel/kernel.o
+
+.data           0x00000000000140a0      0x814
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x00000000000140a0        0x2 kernel/kernel.o
+ *fill*         0x00000000000140a2        0x2 00
+ .data          0x00000000000140a4        0x0 kernel/start.o
+ .data          0x00000000000140a4        0x0 kernel/main.o
+ .data          0x00000000000140a4        0x0 kernel/clock.o
+ *fill*         0x00000000000140a4       0x1c 00
+ .data          0x00000000000140c0      0x600 kernel/keyboard.o
+                0x00000000000140c0                keymap
+ .data          0x00000000000146c0       0x22 kernel/tty.o
+ *fill*         0x00000000000146e2        0x2 00
+ .data          0x00000000000146e4        0x0 kernel/console.o
+ .data          0x00000000000146e4        0x0 kernel/i8259.o
+ *fill*         0x00000000000146e4       0x1c 00
+ .data          0x0000000000014700      0x1b4 kernel/global.o
+                0x0000000000014700                task_table
+                0x00000000000147e0                user_proc_table
+                0x0000000000014880                sys_call_table
+                0x000000000001488c                dd_map
+                0x00000000000148a4                fsbuf
+                0x00000000000148a8                mmbuf
+                0x00000000000148ac                logbuf
+                0x00000000000148b0                logdiskbuf
+ .data          0x00000000000148b4        0x0 kernel/protect.o
+ .data          0x00000000000148b4        0x0 kernel/proc.o
+ .data          0x00000000000148b4        0x0 kernel/systask.o
+ .data          0x00000000000148b4        0x0 kernel/hd.o
+ .data          0x00000000000148b4        0x0 kernel/klib.o
+ .data          0x00000000000148b4        0x0 lib/syslog.o
+ .data          0x00000000000148b4        0x0 mm/main.o
+ .data          0x00000000000148b4        0x0 mm/forkexit.o
+ .data          0x00000000000148b4        0x0 mm/exec.o
+ .data          0x00000000000148b4        0x0 mm/memory.o
+ .data          0x00000000000148b4        0x0 mm/break.o
+ .data          0x00000000000148b4        0x0 fs/main.o
+ .data          0x00000000000148b4        0x0 fs/open.o
+ .data          0x00000000000148b4        0x0 fs/misc.o
+ .data          0x00000000000148b4        0x0 fs/read_write.o
+ .data          0x00000000000148b4        0x0 fs/link.o
+ .data          0x00000000000148b4        0x0 fs/fs_stat.o
+ .data          0x00000000000148b4        0x0 fs/disklog.o
+ .data          0x00000000000148b4        0x0 lib/orangescrt.a(printf.o)
+ .data          0x00000000000148b4        0x0 lib/orangescrt.a(vsprintf.o)
+ .data          0x00000000000148b4        0x0 lib/orangescrt.a(misc.o)
+ .data          0x00000000000148b4        0x0 lib/orangescrt.a(open.o)
+ .data          0x00000000000148b4        0x0 lib/orangescrt.a(read.o)
+ .data          0x00000000000148b4        0x0 lib/orangescrt.a(write.o)
+ .data          0x00000000000148b4        0x0 lib/orangescrt.a(close.o)
+ .data          0x00000000000148b4        0x0 lib/orangescrt.a(lseek.o)
+ .data          0x00000000000148b4        0x0 lib/orangescrt.a(getpid.o)
+ .data          0x00000000000148b4        0x0 lib/orangescrt.a(stat.o)
+ .data          0x00000000000148b4        0x0 lib/orangescrt.a(fork.o)
+ .data          0x00000000000148b4        0x0 lib/orangescrt.a(wait.o)
+ .data          0x00000000000148b4        0x0 lib/orangescrt.a(exec.o)
+ .data          0x00000000000148b4        0x0 lib/orangescrt.a(chdir.o)
+
+.data1
+ *(.data1)
+                0x00000000000148b4                _edata = .
+                0x00000000000148b4                PROVIDE (edata, .)
+                0x00000000000148b4                __bss_start = .
+
+.bss            0x00000000000148c0    0x3b128
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x00000000000148c0      0x800 kernel/kernel.o
+ .bss           0x00000000000150c0        0x0 kernel/start.o
+ .bss           0x00000000000150c0        0x0 kernel/main.o
+ .bss           0x00000000000150c0        0x0 kernel/clock.o
+ .bss           0x00000000000150c0       0x58 kernel/keyboard.o
+ .bss           0x0000000000015118        0x0 kernel/tty.o
+ .bss           0x0000000000015118        0x0 kernel/console.o
+ .bss           0x0000000000015118        0x0 kernel/i8259.o
+ .bss           0x0000000000015118        0x0 kernel/global.o
+ .bss           0x0000000000015118        0x0 kernel/protect.o
+ .bss           0x0000000000015118        0x0 kernel/proc.o
+ .bss           0x0000000000015118        0x0 kernel/systask.o
+ *fill*         0x0000000000015118        0x8 00
+ .bss           0x0000000000015120      0x64c kernel/hd.o
+ .bss           0x000000000001576c        0x0 kernel/klib.o
+ .bss           0x000000000001576c        0x0 lib/syslog.o
+ .bss           0x000000000001576c        0x0 mm/main.o
+ .bss           0x000000000001576c        0x0 mm/forkexit.o
+ .bss           0x000000000001576c        0x0 mm/exec.o
+ .bss           0x000000000001576c        0x0 mm/memory.o
+ .bss           0x000000000001576c        0x0 mm/break.o
+ .bss           0x000000000001576c        0x0 fs/main.o
+ .bss           0x000000000001576c        0x0 fs/open.o
+ .bss           0x000000000001576c        0x0 fs/misc.o
+ .bss           0x000000000001576c        0x0 fs/read_write.o
+ .bss           0x000000000001576c        0x0 fs/link.o
+ .bss           0x000000000001576c        0x0 fs/fs_stat.o
+ *fill*         0x000000000001576c       0x14 00
+ .bss           0x0000000000015780      0x208 fs/disklog.o
+ .bss           0x0000000000015988        0x0 lib/orangescrt.a(printf.o)
+ .bss           0x0000000000015988        0x0 lib/orangescrt.a(vsprintf.o)
+ .bss           0x0000000000015988        0x0 lib/orangescrt.a(misc.o)
+ .bss           0x0000000000015988        0x0 lib/orangescrt.a(open.o)
+ .bss           0x0000000000015988        0x0 lib/orangescrt.a(read.o)
+ .bss           0x0000000000015988        0x0 lib/orangescrt.a(write.o)
+ .bss           0x0000000000015988        0x0 lib/orangescrt.a(close.o)
+ .bss           0x0000000000015988        0x0 lib/orangescrt.a(lseek.o)
+ .bss           0x0000000000015988        0x0 lib/orangescrt.a(getpid.o)
+ .bss           0x0000000000015988        0x0 lib/orangescrt.a(stat.o)
+ .bss           0x0000000000015988        0x0 lib/orangescrt.a(fork.o)
+ .bss           0x0000000000015988        0x0 lib/orangescrt.a(wait.o)
+ .bss           0x0000000000015988        0x0 lib/orangescrt.a(exec.o)
+ .bss           0x0000000000015988        0x0 lib/orangescrt.a(chdir.o)
+ *(COMMON)
+ *fill*         0x0000000000015988       0x18 00
+ COMMON         0x00000000000159a0    0x3a038 kernel/global.o
+                0x00000000000159a0                page_table
+                0x00000000000249a0                idt_ptr
+                0x00000000000249c0                inode_table
+                0x00000000000259c0                task_stack
+                0x00000000000499c0                k_reenter
+                0x00000000000499e0                gdt
+                0x0000000000049de0                mm_free_mem
+                0x0000000000049de4                current_console
+                0x0000000000049de8                pcaller
+                0x0000000000049e00                tty_table
+                0x000000000004aa80                tss
+                0x000000000004ab00                fs_msg
+                0x000000000004ab30                memory_size
+                0x000000000004ab40                f_desc_table
+                0x000000000004af40                root_inode
+                0x000000000004af44                disp_pos
+                0x000000000004af60                mm_msg
+                0x000000000004af90                key_pressed
+                0x000000000004af94                gdt_ptr
+                0x000000000004afa0                idt
+                0x000000000004b7a0                super_block
+                0x000000000004b980                ticks
+                0x000000000004b9a0                console_table
+                0x000000000004b9e0                irq_table
+                0x000000000004ba20                nr_page
+                0x000000000004ba24                p_proc_ready
+                0x000000000004ba40                proc_table
+ COMMON         0x000000000004f9d8       0x10 kernel/hd.o
+                0x000000000004f9d8                PARTITION_ENTRY
+                0x000000000004f9e8                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x000000000004f9e8                . = ALIGN (0x4)
+                0x000000000004f9e8                . = ALIGN (0x4)
+                0x000000000004f9e8                _end = .
+                0x000000000004f9e8                PROVIDE (end, .)
+                0x000000000004f9e8                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x2a
+ *(.comment)
+ .comment       0x0000000000000000       0x2a kernel/start.o
+                                         0x2b (size before relaxing)
+ .comment       0x0000000000000000       0x2b kernel/main.o
+ .comment       0x0000000000000000       0x2b kernel/clock.o
+ .comment       0x0000000000000000       0x2b kernel/keyboard.o
+ .comment       0x0000000000000000       0x2b kernel/tty.o
+ .comment       0x0000000000000000       0x2b kernel/console.o
+ .comment       0x0000000000000000       0x2b kernel/i8259.o
+ .comment       0x0000000000000000       0x2b kernel/global.o
+ .comment       0x0000000000000000       0x2b kernel/protect.o
+ .comment       0x0000000000000000       0x2b kernel/proc.o
+ .comment       0x0000000000000000       0x2b kernel/systask.o
+ .comment       0x0000000000000000       0x2b kernel/hd.o
+ .comment       0x0000000000000000       0x2b kernel/klib.o
+ .comment       0x0000000000000000       0x2b lib/syslog.o
+ .comment       0x0000000000000000       0x2b mm/main.o
+ .comment       0x0000000000000000       0x2b mm/forkexit.o
+ .comment       0x0000000000000000       0x2b mm/exec.o
+ .comment       0x0000000000000000       0x2b mm/memory.o
+ .comment       0x0000000000000000       0x2b mm/break.o
+ .comment       0x0000000000000000       0x2b fs/main.o
+ .comment       0x0000000000000000       0x2b fs/open.o
+ .comment       0x0000000000000000       0x2b fs/misc.o
+ .comment       0x0000000000000000       0x2b fs/read_write.o
+ .comment       0x0000000000000000       0x2b fs/link.o
+ .comment       0x0000000000000000       0x2b fs/fs_stat.o
+ .comment       0x0000000000000000       0x2b fs/disklog.o
+ .comment       0x0000000000000000       0x2b lib/orangescrt.a(printf.o)
+ .comment       0x0000000000000000       0x2b lib/orangescrt.a(vsprintf.o)
+ .comment       0x0000000000000000       0x2b lib/orangescrt.a(misc.o)
+ .comment       0x0000000000000000       0x2b lib/orangescrt.a(open.o)
+ .comment       0x0000000000000000       0x2b lib/orangescrt.a(read.o)
+ .comment       0x0000000000000000       0x2b lib/orangescrt.a(write.o)
+ .comment       0x0000000000000000       0x2b lib/orangescrt.a(close.o)
+ .comment       0x0000000000000000       0x2b lib/orangescrt.a(lseek.o)
+ .comment       0x0000000000000000       0x2b lib/orangescrt.a(getpid.o)
+ .comment       0x0000000000000000       0x2b lib/orangescrt.a(stat.o)
+ .comment       0x0000000000000000       0x2b lib/orangescrt.a(fork.o)
+ .comment       0x0000000000000000       0x2b lib/orangescrt.a(wait.o)
+ .comment       0x0000000000000000       0x2b lib/orangescrt.a(exec.o)
+ .comment       0x0000000000000000       0x2b lib/orangescrt.a(chdir.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000      0x4e0
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x20 kernel/start.o
+ .debug_aranges
+                0x0000000000000020       0x20 kernel/main.o
+ .debug_aranges
+                0x0000000000000040       0x20 kernel/clock.o
+ .debug_aranges
+                0x0000000000000060       0x20 kernel/keyboard.o
+ .debug_aranges
+                0x0000000000000080       0x20 kernel/tty.o
+ .debug_aranges
+                0x00000000000000a0       0x20 kernel/console.o
+ .debug_aranges
+                0x00000000000000c0       0x20 kernel/i8259.o
+ .debug_aranges
+                0x00000000000000e0       0x20 kernel/protect.o
+ .debug_aranges
+                0x0000000000000100       0x20 kernel/proc.o
+ .debug_aranges
+                0x0000000000000120       0x20 kernel/systask.o
+ .debug_aranges
+                0x0000000000000140       0x20 kernel/hd.o
+ .debug_aranges
+                0x0000000000000160       0x20 kernel/klib.o
+ .debug_aranges
+                0x0000000000000180       0x20 lib/syslog.o
+ .debug_aranges
+                0x00000000000001a0       0x20 mm/main.o
+ .debug_aranges
+                0x00000000000001c0       0x20 mm/forkexit.o
+ .debug_aranges
+                0x00000000000001e0       0x20 mm/exec.o
+ .debug_aranges
+                0x0000000000000200       0x20 mm/memory.o
+ .debug_aranges
+                0x0000000000000220       0x20 mm/break.o
+ .debug_aranges
+                0x0000000000000240       0x20 fs/main.o
+ .debug_aranges
+                0x0000000000000260       0x20 fs/open.o
+ .debug_aranges
+                0x0000000000000280       0x20 fs/misc.o
+ .debug_aranges
+                0x00000000000002a0       0x20 fs/read_write.o
+ .debug_aranges
+                0x00000000000002c0       0x20 fs/link.o
+ .debug_aranges
+                0x00000000000002e0       0x20 fs/fs_stat.o
+ .debug_aranges
+                0x0000000000000300       0x20 fs/disklog.o
+ .debug_aranges
+                0x0000000000000320       0x20 lib/orangescrt.a(printf.o)
+ .debug_aranges
+                0x0000000000000340       0x20 lib/orangescrt.a(vsprintf.o)
+ .debug_aranges
+                0x0000000000000360       0x20 lib/orangescrt.a(misc.o)
+ .debug_aranges
+                0x0000000000000380       0x20 lib/orangescrt.a(open.o)
+ .debug_aranges
+                0x00000000000003a0       0x20 lib/orangescrt.a(read.o)
+ .debug_aranges
+                0x00000000000003c0       0x20 lib/orangescrt.a(write.o)
+ .debug_aranges
+                0x00000000000003e0       0x20 lib/orangescrt.a(close.o)
+ .debug_aranges
+                0x0000000000000400       0x20 lib/orangescrt.a(lseek.o)
+ .debug_aranges
+                0x0000000000000420       0x20 lib/orangescrt.a(getpid.o)
+ .debug_aranges
+                0x0000000000000440       0x20 lib/orangescrt.a(stat.o)
+ .debug_aranges
+                0x0000000000000460       0x20 lib/orangescrt.a(fork.o)
+ .debug_aranges
+                0x0000000000000480       0x20 lib/orangescrt.a(wait.o)
+ .debug_aranges
+                0x00000000000004a0       0x20 lib/orangescrt.a(exec.o)
+ .debug_aranges
+                0x00000000000004c0       0x20 lib/orangescrt.a(chdir.o)
+
+.debug_pubnames
+                0x0000000000000000      0xb06
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x0000000000000000       0x1d kernel/start.o
+ .debug_pubnames
+                0x000000000000001d       0x7c kernel/main.o
+ .debug_pubnames
+                0x0000000000000099       0x43 kernel/clock.o
+ .debug_pubnames
+                0x00000000000000dc       0x56 kernel/keyboard.o
+ .debug_pubnames
+                0x0000000000000132       0x4e kernel/tty.o
+ .debug_pubnames
+                0x0000000000000180       0x6b kernel/console.o
+ .debug_pubnames
+                0x00000000000001eb       0x46 kernel/i8259.o
+ .debug_pubnames
+                0x0000000000000231      0x236 kernel/global.o
+ .debug_pubnames
+                0x0000000000000467       0x53 kernel/protect.o
+ .debug_pubnames
+                0x00000000000004ba       0x84 kernel/proc.o
+ .debug_pubnames
+                0x000000000000053e       0x1f kernel/systask.o
+ .debug_pubnames
+                0x000000000000055d       0x41 kernel/hd.o
+ .debug_pubnames
+                0x000000000000059e       0x59 kernel/klib.o
+ .debug_pubnames
+                0x00000000000005f7       0x1d lib/syslog.o
+ .debug_pubnames
+                0x0000000000000614       0x39 mm/main.o
+ .debug_pubnames
+                0x000000000000064d       0x36 mm/forkexit.o
+ .debug_pubnames
+                0x0000000000000683       0x2e mm/exec.o
+ .debug_pubnames
+                0x00000000000006b1       0x67 mm/memory.o
+ .debug_pubnames
+                0x0000000000000718       0x1d mm/break.o
+ .debug_pubnames
+                0x0000000000000735       0x7f fs/main.o
+ .debug_pubnames
+                0x00000000000007b4       0x45 fs/open.o
+ .debug_pubnames
+                0x00000000000007f9       0x51 fs/misc.o
+ .debug_pubnames
+                0x000000000000084a       0x39 fs/read_write.o
+ .debug_pubnames
+                0x0000000000000883       0x20 fs/link.o
+ .debug_pubnames
+                0x00000000000008a3       0x1f fs/fs_stat.o
+ .debug_pubnames
+                0x00000000000008c2       0x44 fs/disklog.o
+ .debug_pubnames
+                0x0000000000000906       0x28 lib/orangescrt.a(printf.o)
+ .debug_pubnames
+                0x000000000000092e       0x2b lib/orangescrt.a(vsprintf.o)
+ .debug_pubnames
+                0x0000000000000959       0x60 lib/orangescrt.a(misc.o)
+ .debug_pubnames
+                0x00000000000009b9       0x1b lib/orangescrt.a(open.o)
+ .debug_pubnames
+                0x00000000000009d4       0x1b lib/orangescrt.a(read.o)
+ .debug_pubnames
+                0x00000000000009ef       0x1c lib/orangescrt.a(write.o)
+ .debug_pubnames
+                0x0000000000000a0b       0x1c lib/orangescrt.a(close.o)
+ .debug_pubnames
+                0x0000000000000a27       0x1c lib/orangescrt.a(lseek.o)
+ .debug_pubnames
+                0x0000000000000a43       0x1d lib/orangescrt.a(getpid.o)
+ .debug_pubnames
+                0x0000000000000a60       0x25 lib/orangescrt.a(stat.o)
+ .debug_pubnames
+                0x0000000000000a85       0x1b lib/orangescrt.a(fork.o)
+ .debug_pubnames
+                0x0000000000000aa0       0x1b lib/orangescrt.a(wait.o)
+ .debug_pubnames
+                0x0000000000000abb       0x2f lib/orangescrt.a(exec.o)
+ .debug_pubnames
+                0x0000000000000aea       0x1c lib/orangescrt.a(chdir.o)
+
+.debug_info     0x0000000000000000    0x10dec
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000      0x224 kernel/start.o
+ .debug_info    0x0000000000000224      0xdd4 kernel/main.o
+ .debug_info    0x0000000000000ff8      0x6b2 kernel/clock.o
+ .debug_info    0x00000000000016aa      0x4ce kernel/keyboard.o
+ .debug_info    0x0000000000001b78      0xbd8 kernel/tty.o
+ .debug_info    0x0000000000002750      0x4f4 kernel/console.o
+ .debug_info    0x0000000000002c44      0x120 kernel/i8259.o
+ .debug_info    0x0000000000002d64      0xe2a kernel/global.o
+ .debug_info    0x0000000000003b8e      0xa3b kernel/protect.o
+ .debug_info    0x00000000000045c9      0xb1f kernel/proc.o
+ .debug_info    0x00000000000050e8      0x3ad kernel/systask.o
+ .debug_info    0x0000000000005495      0xa24 kernel/hd.o
+ .debug_info    0x0000000000005eb9      0x46f kernel/klib.o
+ .debug_info    0x0000000000006328       0xda lib/syslog.o
+ .debug_info    0x0000000000006402      0x8db mm/main.o
+ .debug_info    0x0000000000006cdd      0x8cb mm/forkexit.o
+ .debug_info    0x00000000000075a8      0xb86 mm/exec.o
+ .debug_info    0x000000000000812e      0xa0c mm/memory.o
+ .debug_info    0x0000000000008b3a      0x673 mm/break.o
+ .debug_info    0x00000000000091ad      0xe2e fs/main.o
+ .debug_info    0x0000000000009fdb      0xdaa fs/open.o
+ .debug_info    0x000000000000ad85      0xa66 fs/misc.o
+ .debug_info    0x000000000000b7eb      0xe2b fs/read_write.o
+ .debug_info    0x000000000000c616      0x9a0 fs/link.o
+ .debug_info    0x000000000000cfb6      0x735 fs/fs_stat.o
+ .debug_info    0x000000000000d6eb     0x100a fs/disklog.o
+ .debug_info    0x000000000000e6f5      0x13c lib/orangescrt.a(printf.o)
+ .debug_info    0x000000000000e831      0x1ec lib/orangescrt.a(vsprintf.o)
+ .debug_info    0x000000000000ea1d      0x3ca lib/orangescrt.a(misc.o)
+ .debug_info    0x000000000000ede7      0x2d3 lib/orangescrt.a(open.o)
+ .debug_info    0x000000000000f0ba      0x2d1 lib/orangescrt.a(read.o)
+ .debug_info    0x000000000000f38b      0x2dc lib/orangescrt.a(write.o)
+ .debug_info    0x000000000000f667      0x2b5 lib/orangescrt.a(close.o)
+ .debug_info    0x000000000000f91c      0x2d1 lib/orangescrt.a(lseek.o)
+ .debug_info    0x000000000000fbed      0x2a7 lib/orangescrt.a(getpid.o)
+ .debug_info    0x000000000000fe94      0x370 lib/orangescrt.a(stat.o)
+ .debug_info    0x0000000000010204      0x2a7 lib/orangescrt.a(fork.o)
+ .debug_info    0x00000000000104ab      0x2c0 lib/orangescrt.a(wait.o)
+ .debug_info    0x000000000001076b      0x3bc lib/orangescrt.a(exec.o)
+ .debug_info    0x0000000000010b27      0x2c5 lib/orangescrt.a(chdir.o)
+
+.debug_abbrev   0x0000000000000000     0x362f
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000       0xb8 kernel/start.o
+ .debug_abbrev  0x00000000000000b8      0x220 kernel/main.o
+ .debug_abbrev  0x00000000000002d8      0x133 kernel/clock.o
+ .debug_abbrev  0x000000000000040b      0x164 kernel/keyboard.o
+ .debug_abbrev  0x000000000000056f      0x20a kernel/tty.o
+ .debug_abbrev  0x0000000000000779      0x17e kernel/console.o
+ .debug_abbrev  0x00000000000008f7       0xca kernel/i8259.o
+ .debug_abbrev  0x00000000000009c1      0x131 kernel/global.o
+ .debug_abbrev  0x0000000000000af2      0x1a3 kernel/protect.o
+ .debug_abbrev  0x0000000000000c95      0x23d kernel/proc.o
+ .debug_abbrev  0x0000000000000ed2      0x13e kernel/systask.o
+ .debug_abbrev  0x0000000000001010      0x259 kernel/hd.o
+ .debug_abbrev  0x0000000000001269      0x132 kernel/klib.o
+ .debug_abbrev  0x000000000000139b       0x95 lib/syslog.o
+ .debug_abbrev  0x0000000000001430      0x188 mm/main.o
+ .debug_abbrev  0x00000000000015b8      0x1ae mm/forkexit.o
+ .debug_abbrev  0x0000000000001766      0x1ce mm/exec.o
+ .debug_abbrev  0x0000000000001934      0x1ba mm/memory.o
+ .debug_abbrev  0x0000000000001aee      0x116 mm/break.o
+ .debug_abbrev  0x0000000000001c04      0x201 fs/main.o
+ .debug_abbrev  0x0000000000001e05      0x1f0 fs/open.o
+ .debug_abbrev  0x0000000000001ff5      0x18e fs/misc.o
+ .debug_abbrev  0x0000000000002183      0x1ff fs/read_write.o
+ .debug_abbrev  0x0000000000002382      0x140 fs/link.o
+ .debug_abbrev  0x00000000000024c2      0x154 fs/fs_stat.o
+ .debug_abbrev  0x0000000000002616      0x1f3 fs/disklog.o
+ .debug_abbrev  0x0000000000002809       0xae lib/orangescrt.a(printf.o)
+ .debug_abbrev  0x00000000000028b7       0xec lib/orangescrt.a(vsprintf.o)
+ .debug_abbrev  0x00000000000029a3      0x128 lib/orangescrt.a(misc.o)
+ .debug_abbrev  0x0000000000002acb      0x109 lib/orangescrt.a(open.o)
+ .debug_abbrev  0x0000000000002bd4      0x106 lib/orangescrt.a(read.o)
+ .debug_abbrev  0x0000000000002cda      0x116 lib/orangescrt.a(write.o)
+ .debug_abbrev  0x0000000000002df0       0xf7 lib/orangescrt.a(close.o)
+ .debug_abbrev  0x0000000000002ee7      0x106 lib/orangescrt.a(lseek.o)
+ .debug_abbrev  0x0000000000002fed       0xe6 lib/orangescrt.a(getpid.o)
+ .debug_abbrev  0x00000000000030d3      0x12f lib/orangescrt.a(stat.o)
+ .debug_abbrev  0x0000000000003202       0xe6 lib/orangescrt.a(fork.o)
+ .debug_abbrev  0x00000000000032e8      0x102 lib/orangescrt.a(wait.o)
+ .debug_abbrev  0x00000000000033ea      0x13c lib/orangescrt.a(exec.o)
+ .debug_abbrev  0x0000000000003526      0x109 lib/orangescrt.a(chdir.o)
+
+.debug_line     0x0000000000000000     0x50ae
+ *(.debug_line)
+ .debug_line    0x0000000000000000      0x107 kernel/start.o
+ .debug_line    0x0000000000000107      0x2d4 kernel/main.o
+ .debug_line    0x00000000000003db      0x121 kernel/clock.o
+ .debug_line    0x00000000000004fc      0x2e2 kernel/keyboard.o
+ .debug_line    0x00000000000007de      0x2cf kernel/tty.o
+ .debug_line    0x0000000000000aad      0x261 kernel/console.o
+ .debug_line    0x0000000000000d0e      0x11a kernel/i8259.o
+ .debug_line    0x0000000000000e28       0xdc kernel/global.o
+ .debug_line    0x0000000000000f04      0x1d4 kernel/protect.o
+ .debug_line    0x00000000000010d8      0x5cb kernel/proc.o
+ .debug_line    0x00000000000016a3      0x14f kernel/systask.o
+ .debug_line    0x00000000000017f2      0x3b9 kernel/hd.o
+ .debug_line    0x0000000000001bab      0x28d kernel/klib.o
+ .debug_line    0x0000000000001e38      0x104 lib/syslog.o
+ .debug_line    0x0000000000001f3c      0x1c0 mm/main.o
+ .debug_line    0x00000000000020fc      0x1fb mm/forkexit.o
+ .debug_line    0x00000000000022f7      0x2a3 mm/exec.o
+ .debug_line    0x000000000000259a      0x204 mm/memory.o
+ .debug_line    0x000000000000279e      0x206 mm/break.o
+ .debug_line    0x00000000000029a4      0x40e fs/main.o
+ .debug_line    0x0000000000002db2      0x345 fs/open.o
+ .debug_line    0x00000000000030f7      0x1dd fs/misc.o
+ .debug_line    0x00000000000032d4      0x45b fs/read_write.o
+ .debug_line    0x000000000000372f      0x218 fs/link.o
+ .debug_line    0x0000000000003947      0x240 fs/fs_stat.o
+ .debug_line    0x0000000000003b87      0x537 fs/disklog.o
+ .debug_line    0x00000000000040be      0x11d lib/orangescrt.a(printf.o)
+ .debug_line    0x00000000000041db      0x1ab lib/orangescrt.a(vsprintf.o)
+ .debug_line    0x0000000000004386      0x1ae lib/orangescrt.a(misc.o)
+ .debug_line    0x0000000000004534      0x104 lib/orangescrt.a(open.o)
+ .debug_line    0x0000000000004638       0xfa lib/orangescrt.a(read.o)
+ .debug_line    0x0000000000004732       0xfb lib/orangescrt.a(write.o)
+ .debug_line    0x000000000000482d       0xf9 lib/orangescrt.a(close.o)
+ .debug_line    0x0000000000004926       0xfb lib/orangescrt.a(lseek.o)
+ .debug_line    0x0000000000004a21      0x103 lib/orangescrt.a(getpid.o)
+ .debug_line    0x0000000000004b24      0x11a lib/orangescrt.a(stat.o)
+ .debug_line    0x0000000000004c3e      0x10d lib/orangescrt.a(fork.o)
+ .debug_line    0x0000000000004d4b      0x108 lib/orangescrt.a(wait.o)
+ .debug_line    0x0000000000004e53      0x157 lib/orangescrt.a(exec.o)
+ .debug_line    0x0000000000004faa      0x104 lib/orangescrt.a(chdir.o)
+
+.debug_frame    0x0000000000000000     0x183c
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000       0x34 kernel/start.o
+ .debug_frame   0x0000000000000034      0x104 kernel/main.o
+ .debug_frame   0x0000000000000138       0x74 kernel/clock.o
+ .debug_frame   0x00000000000001ac       0xf4 kernel/keyboard.o
+ .debug_frame   0x00000000000002a0      0x14c kernel/tty.o
+ .debug_frame   0x00000000000003ec      0x158 kernel/console.o
+ .debug_frame   0x0000000000000544       0x74 kernel/i8259.o
+ .debug_frame   0x00000000000005b8       0xbc kernel/protect.o
+ .debug_frame   0x0000000000000674      0x1c8 kernel/proc.o
+ .debug_frame   0x000000000000083c       0x70 kernel/systask.o
+ .debug_frame   0x00000000000008ac      0x1d8 kernel/hd.o
+ .debug_frame   0x0000000000000a84       0xb8 kernel/klib.o
+ .debug_frame   0x0000000000000b3c       0x34 lib/syslog.o
+ .debug_frame   0x0000000000000b70       0xac mm/main.o
+ .debug_frame   0x0000000000000c1c       0xa0 mm/forkexit.o
+ .debug_frame   0x0000000000000cbc       0x7c mm/exec.o
+ .debug_frame   0x0000000000000d38      0x13c mm/memory.o
+ .debug_frame   0x0000000000000e74       0x34 mm/break.o
+ .debug_frame   0x0000000000000ea8      0x17c fs/main.o
+ .debug_frame   0x0000000000001024      0x158 fs/open.o
+ .debug_frame   0x000000000000117c       0x9c fs/misc.o
+ .debug_frame   0x0000000000001218       0xe8 fs/read_write.o
+ .debug_frame   0x0000000000001300       0x40 fs/link.o
+ .debug_frame   0x0000000000001340       0x5c fs/fs_stat.o
+ .debug_frame   0x000000000000139c       0x6c fs/disklog.o
+ .debug_frame   0x0000000000001408       0x54 lib/orangescrt.a(printf.o)
+ .debug_frame   0x000000000000145c       0x78 lib/orangescrt.a(vsprintf.o)
+ .debug_frame   0x00000000000014d4       0xcc lib/orangescrt.a(misc.o)
+ .debug_frame   0x00000000000015a0       0x34 lib/orangescrt.a(open.o)
+ .debug_frame   0x00000000000015d4       0x34 lib/orangescrt.a(read.o)
+ .debug_frame   0x0000000000001608       0x34 lib/orangescrt.a(write.o)
+ .debug_frame   0x000000000000163c       0x34 lib/orangescrt.a(close.o)
+ .debug_frame   0x0000000000001670       0x34 lib/orangescrt.a(lseek.o)
+ .debug_frame   0x00000000000016a4       0x34 lib/orangescrt.a(getpid.o)
+ .debug_frame   0x00000000000016d8       0x54 lib/orangescrt.a(stat.o)
+ .debug_frame   0x000000000000172c       0x34 lib/orangescrt.a(fork.o)
+ .debug_frame   0x0000000000001760       0x34 lib/orangescrt.a(wait.o)
+ .debug_frame   0x0000000000001794       0x74 lib/orangescrt.a(exec.o)
+ .debug_frame   0x0000000000001808       0x34 lib/orangescrt.a(chdir.o)
+
+.debug_str      0x0000000000000000     0x1b8b
+ *(.debug_str)
+ .debug_str     0x0000000000000000      0x135 kernel/start.o
+                                        0x15e (size before relaxing)
+ .debug_str     0x0000000000000135      0x401 kernel/main.o
+                                        0x542 (size before relaxing)
+ .debug_str     0x0000000000000536       0x4a kernel/clock.o
+                                        0x300 (size before relaxing)
+ .debug_str     0x0000000000000580      0x1bc kernel/keyboard.o
+                                        0x282 (size before relaxing)
+ .debug_str     0x000000000000073c       0xb4 kernel/tty.o
+                                        0x4fa (size before relaxing)
+ .debug_str     0x00000000000007f0      0x119 kernel/console.o
+                                        0x26d (size before relaxing)
+ .debug_str     0x0000000000000909       0x41 kernel/i8259.o
+                                         0xe6 (size before relaxing)
+ .debug_str     0x000000000000094a      0x1ad kernel/global.o
+                                        0x628 (size before relaxing)
+ .debug_str     0x0000000000000af7       0xc1 kernel/protect.o
+                                        0x3e2 (size before relaxing)
+ .debug_str     0x0000000000000bb8      0x101 kernel/proc.o
+                                        0x4b8 (size before relaxing)
+ .debug_str     0x0000000000000cb9       0x5c kernel/systask.o
+                                        0x23b (size before relaxing)
+ .debug_str     0x0000000000000d15      0x21c kernel/hd.o
+                                        0x440 (size before relaxing)
+ .debug_str     0x0000000000000f31      0x1ba kernel/klib.o
+                                        0x27c (size before relaxing)
+ .debug_str     0x00000000000010eb       0x14 lib/syslog.o
+                                         0xad (size before relaxing)
+ .debug_str     0x00000000000010ff       0xa1 mm/main.o
+                                        0x479 (size before relaxing)
+ .debug_str     0x00000000000011a0       0x77 mm/forkexit.o
+                                        0x45f (size before relaxing)
+ .debug_str     0x0000000000001217       0xe2 mm/exec.o
+                                        0x566 (size before relaxing)
+ .debug_str     0x00000000000012f9      0x127 mm/memory.o
+                                        0x423 (size before relaxing)
+ .debug_str     0x0000000000001420       0x1b mm/break.o
+                                        0x2f0 (size before relaxing)
+ .debug_str     0x000000000000143b      0x10f fs/main.o
+                                        0x639 (size before relaxing)
+ .debug_str     0x000000000000154a       0xec fs/open.o
+                                        0x5cd (size before relaxing)
+ .debug_str     0x0000000000001636       0x47 fs/misc.o
+                                        0x4e1 (size before relaxing)
+ .debug_str     0x000000000000167d      0x1f3 fs/read_write.o
+                                        0x6bc (size before relaxing)
+ .debug_str     0x0000000000001870       0x4a fs/link.o
+                                        0x4f5 (size before relaxing)
+ .debug_str     0x00000000000018ba       0x50 fs/fs_stat.o
+                                        0x34e (size before relaxing)
+ .debug_str     0x000000000000190a      0x137 fs/disklog.o
+                                        0x723 (size before relaxing)
+ .debug_str     0x0000000000001a41       0x14 lib/orangescrt.a(printf.o)
+                                         0xb4 (size before relaxing)
+ .debug_str     0x0000000000001a55       0x3b lib/orangescrt.a(vsprintf.o)
+                                         0xe1 (size before relaxing)
+ .debug_str     0x0000000000001a90       0x5a lib/orangescrt.a(misc.o)
+                                        0x178 (size before relaxing)
+ .debug_str     0x0000000000001aea        0xb lib/orangescrt.a(open.o)
+                                        0x1f3 (size before relaxing)
+ .debug_str     0x0000000000001af5        0xb lib/orangescrt.a(read.o)
+                                        0x1ea (size before relaxing)
+ .debug_str     0x0000000000001b00        0xc lib/orangescrt.a(write.o)
+                                        0x1ec (size before relaxing)
+ .debug_str     0x0000000000001b0c        0xc lib/orangescrt.a(close.o)
+                                        0x1e6 (size before relaxing)
+ .debug_str     0x0000000000001b18        0xc lib/orangescrt.a(lseek.o)
+                                        0x1f4 (size before relaxing)
+ .debug_str     0x0000000000001b24       0x14 lib/orangescrt.a(getpid.o)
+                                        0x1e8 (size before relaxing)
+ .debug_str     0x0000000000001b38        0xb lib/orangescrt.a(stat.o)
+                                        0x223 (size before relaxing)
+ .debug_str     0x0000000000001b43        0xb lib/orangescrt.a(fork.o)
+                                        0x1e4 (size before relaxing)
+ .debug_str     0x0000000000001b4e        0xb lib/orangescrt.a(wait.o)
+                                        0x1eb (size before relaxing)
+ .debug_str     0x0000000000001b59       0x26 lib/orangescrt.a(exec.o)
+                                        0x21b (size before relaxing)
+ .debug_str     0x0000000000001b7f        0xc lib/orangescrt.a(chdir.o)
+                                        0x1eb (size before relaxing)
+
+.debug_loc      0x0000000000000000     0x23c0
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000       0x38 kernel/start.o
+ .debug_loc     0x0000000000000038      0x1b0 kernel/main.o
+ .debug_loc     0x00000000000001e8       0xa8 kernel/clock.o
+ .debug_loc     0x0000000000000290      0x188 kernel/keyboard.o
+ .debug_loc     0x0000000000000418      0x224 kernel/tty.o
+ .debug_loc     0x000000000000063c      0x230 kernel/console.o
+ .debug_loc     0x000000000000086c       0xa8 kernel/i8259.o
+ .debug_loc     0x0000000000000914      0x118 kernel/protect.o
+ .debug_loc     0x0000000000000a2c      0x2d8 kernel/proc.o
+ .debug_loc     0x0000000000000d04       0x9c kernel/systask.o
+ .debug_loc     0x0000000000000da0      0x304 kernel/hd.o
+ .debug_loc     0x00000000000010a4      0x118 kernel/klib.o
+ .debug_loc     0x00000000000011bc       0x38 lib/syslog.o
+ .debug_loc     0x00000000000011f4      0x10c mm/main.o
+ .debug_loc     0x0000000000001300       0xe0 mm/forkexit.o
+ .debug_loc     0x00000000000013e0       0xa8 mm/exec.o
+ .debug_loc     0x0000000000001488      0x1f8 mm/memory.o
+ .debug_loc     0x0000000000001680       0x38 mm/break.o
+ .debug_loc     0x00000000000016b8      0x25c fs/main.o
+ .debug_loc     0x0000000000001914      0x1f8 fs/open.o
+ .debug_loc     0x0000000000001b0c       0xe0 fs/misc.o
+ .debug_loc     0x0000000000001bec      0x150 fs/read_write.o
+ .debug_loc     0x0000000000001d3c       0x38 fs/link.o
+ .debug_loc     0x0000000000001d74       0x70 fs/fs_stat.o
+ .debug_loc     0x0000000000001de4       0x70 fs/disklog.o
+ .debug_loc     0x0000000000001e54       0x70 lib/orangescrt.a(printf.o)
+ .debug_loc     0x0000000000001ec4       0xa8 lib/orangescrt.a(vsprintf.o)
+ .debug_loc     0x0000000000001f6c      0x144 lib/orangescrt.a(misc.o)
+ .debug_loc     0x00000000000020b0       0x38 lib/orangescrt.a(open.o)
+ .debug_loc     0x00000000000020e8       0x38 lib/orangescrt.a(read.o)
+ .debug_loc     0x0000000000002120       0x38 lib/orangescrt.a(write.o)
+ .debug_loc     0x0000000000002158       0x38 lib/orangescrt.a(close.o)
+ .debug_loc     0x0000000000002190       0x38 lib/orangescrt.a(lseek.o)
+ .debug_loc     0x00000000000021c8       0x38 lib/orangescrt.a(getpid.o)
+ .debug_loc     0x0000000000002200       0x70 lib/orangescrt.a(stat.o)
+ .debug_loc     0x0000000000002270       0x38 lib/orangescrt.a(fork.o)
+ .debug_loc     0x00000000000022a8       0x38 lib/orangescrt.a(wait.o)
+ .debug_loc     0x00000000000022e0       0xa8 lib/orangescrt.a(exec.o)
+ .debug_loc     0x0000000000002388       0x38 lib/orangescrt.a(chdir.o)
+
+.debug_macinfo  0x0000000000000000    0xb9353
+ *(.debug_macinfo)
+ .debug_macinfo
+                0x0000000000000000     0x33ce kernel/start.o
+ .debug_macinfo
+                0x00000000000033ce     0x33ce kernel/main.o
+ .debug_macinfo
+                0x000000000000679c     0x33ce kernel/clock.o
+ .debug_macinfo
+                0x0000000000009b6a     0x3bc8 kernel/keyboard.o
+ .debug_macinfo
+                0x000000000000d732     0x3bea kernel/tty.o
+ .debug_macinfo
+                0x000000000001131c     0x3bae kernel/console.o
+ .debug_macinfo
+                0x0000000000014eca     0x33a5 kernel/i8259.o
+ .debug_macinfo
+                0x000000000001826f     0x33d1 kernel/global.o
+ .debug_macinfo
+                0x000000000001b640     0x33ce kernel/protect.o
+ .debug_macinfo
+                0x000000000001ea0e     0x33ce kernel/proc.o
+ .debug_macinfo
+                0x0000000000021ddc     0x3bae kernel/systask.o
+ .debug_macinfo
+                0x000000000002598a     0x36e5 kernel/hd.o
+ .debug_macinfo
+                0x000000000002906f     0xedbd kernel/klib.o
+ .debug_macinfo
+                0x0000000000037e2c     0x33ce lib/syslog.o
+ .debug_macinfo
+                0x000000000003b1fa     0x3cbd mm/main.o
+ .debug_macinfo
+                0x000000000003eeb7     0x3bae mm/forkexit.o
+ .debug_macinfo
+                0x0000000000042a65     0xf48e mm/exec.o
+ .debug_macinfo
+                0x0000000000051ef3     0x3417 mm/memory.o
+ .debug_macinfo
+                0x000000000005530a     0xf48e mm/break.o
+ .debug_macinfo
+                0x0000000000064798     0x378e fs/main.o
+ .debug_macinfo
+                0x0000000000067f26     0x3bae fs/open.o
+ .debug_macinfo
+                0x000000000006bad4     0x3e5f fs/misc.o
+ .debug_macinfo
+                0x000000000006f933     0x3bae fs/read_write.o
+ .debug_macinfo
+                0x00000000000734e1     0x3bae fs/link.o
+ .debug_macinfo
+                0x000000000007708f     0xf48e fs/fs_stat.o
+ .debug_macinfo
+                0x000000000008651d     0x4152 fs/disklog.o
+ .debug_macinfo
+                0x000000000008a66f     0x3bae lib/orangescrt.a(printf.o)
+ .debug_macinfo
+                0x000000000008e21d     0x3bae lib/orangescrt.a(vsprintf.o)
+ .debug_macinfo
+                0x0000000000091dcb     0x3bae lib/orangescrt.a(misc.o)
+ .debug_macinfo
+                0x0000000000095979     0x33ce lib/orangescrt.a(open.o)
+ .debug_macinfo
+                0x0000000000098d47     0x33ce lib/orangescrt.a(read.o)
+ .debug_macinfo
+                0x000000000009c115     0x33ce lib/orangescrt.a(write.o)
+ .debug_macinfo
+                0x000000000009f4e3     0x33ce lib/orangescrt.a(close.o)
+ .debug_macinfo
+                0x00000000000a28b1     0x33ce lib/orangescrt.a(lseek.o)
+ .debug_macinfo
+                0x00000000000a5c7f     0x33ce lib/orangescrt.a(getpid.o)
+ .debug_macinfo
+                0x00000000000a904d     0x33ce lib/orangescrt.a(stat.o)
+ .debug_macinfo
+                0x00000000000ac41b     0x33ce lib/orangescrt.a(fork.o)
+ .debug_macinfo
+                0x00000000000af7e9     0x33ce lib/orangescrt.a(wait.o)
+ .debug_macinfo
+                0x00000000000b2bb7     0x33ce lib/orangescrt.a(exec.o)
+ .debug_macinfo
+                0x00000000000b5f85     0x33ce lib/orangescrt.a(chdir.o)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+                0x0000000000000000     0x15a9
+ *(.debug_pubtypes)
+ .debug_pubtypes
+                0x0000000000000000       0x41 kernel/start.o
+ .debug_pubtypes
+                0x0000000000000041       0xe6 kernel/main.o
+ .debug_pubtypes
+                0x0000000000000127       0xa5 kernel/clock.o
+ .debug_pubtypes
+                0x00000000000001cc       0x4e kernel/keyboard.o
+ .debug_pubtypes
+                0x000000000000021a       0xd1 kernel/tty.o
+ .debug_pubtypes
+                0x00000000000002eb       0x4d kernel/console.o
+ .debug_pubtypes
+                0x0000000000000338       0x22 kernel/i8259.o
+ .debug_pubtypes
+                0x000000000000035a      0x136 kernel/global.o
+ .debug_pubtypes
+                0x0000000000000490       0xc6 kernel/protect.o
+ .debug_pubtypes
+                0x0000000000000556       0xb1 kernel/proc.o
+ .debug_pubtypes
+                0x0000000000000607       0x61 kernel/systask.o
+ .debug_pubtypes
+                0x0000000000000668       0x99 kernel/hd.o
+ .debug_pubtypes
+                0x0000000000000701       0x95 kernel/klib.o
+ .debug_pubtypes
+                0x0000000000000796       0x1e lib/syslog.o
+ .debug_pubtypes
+                0x00000000000007b4       0xc1 mm/main.o
+ .debug_pubtypes
+                0x0000000000000875       0xb1 mm/forkexit.o
+ .debug_pubtypes
+                0x0000000000000926      0x12d mm/exec.o
+ .debug_pubtypes
+                0x0000000000000a53       0xa5 mm/memory.o
+ .debug_pubtypes
+                0x0000000000000af8       0xa5 mm/break.o
+ .debug_pubtypes
+                0x0000000000000b9d      0x101 fs/main.o
+ .debug_pubtypes
+                0x0000000000000c9e       0xe6 fs/open.o
+ .debug_pubtypes
+                0x0000000000000d84       0xdc fs/misc.o
+ .debug_pubtypes
+                0x0000000000000e60       0xd1 fs/read_write.o
+ .debug_pubtypes
+                0x0000000000000f31       0xd6 fs/link.o
+ .debug_pubtypes
+                0x0000000000001007       0xa5 fs/fs_stat.o
+ .debug_pubtypes
+                0x00000000000010ac       0xf8 fs/disklog.o
+ .debug_pubtypes
+                0x00000000000011a4       0x1e lib/orangescrt.a(printf.o)
+ .debug_pubtypes
+                0x00000000000011c2       0x1e lib/orangescrt.a(vsprintf.o)
+ .debug_pubtypes
+                0x00000000000011e0       0x44 lib/orangescrt.a(misc.o)
+ .debug_pubtypes
+                0x0000000000001224       0x50 lib/orangescrt.a(open.o)
+ .debug_pubtypes
+                0x0000000000001274       0x50 lib/orangescrt.a(read.o)
+ .debug_pubtypes
+                0x00000000000012c4       0x50 lib/orangescrt.a(write.o)
+ .debug_pubtypes
+                0x0000000000001314       0x50 lib/orangescrt.a(close.o)
+ .debug_pubtypes
+                0x0000000000001364       0x50 lib/orangescrt.a(lseek.o)
+ .debug_pubtypes
+                0x00000000000013b4       0x50 lib/orangescrt.a(getpid.o)
+ .debug_pubtypes
+                0x0000000000001404       0x59 lib/orangescrt.a(stat.o)
+ .debug_pubtypes
+                0x000000000000145d       0x50 lib/orangescrt.a(fork.o)
+ .debug_pubtypes
+                0x00000000000014ad       0x50 lib/orangescrt.a(wait.o)
+ .debug_pubtypes
+                0x00000000000014fd       0x5c lib/orangescrt.a(exec.o)
+ .debug_pubtypes
+                0x0000000000001559       0x50 lib/orangescrt.a(chdir.o)
+
+.debug_ranges   0x0000000000000000       0xa8
+ *(.debug_ranges)
+ .debug_ranges  0x0000000000000000       0x78 kernel/main.o
+ .debug_ranges  0x0000000000000078       0x30 kernel/hd.o
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(kernel.bin elf32-i386)

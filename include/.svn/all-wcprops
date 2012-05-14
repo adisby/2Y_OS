@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/2Y_OS/!svn/ver/15/branches/b/include
+END
+type.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/2Y_OS/!svn/ver/22/branches/b/include/type.h
+END
+stdlib.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/2Y_OS/!svn/ver/21/branches/b/include/stdlib.h
+END
+stdio.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/2Y_OS/!svn/ver/19/branches/b/include/stdio.h
+END
+dirent.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/2Y_OS/!svn/ver/21/branches/b/include/dirent.h
+END
+string.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/2Y_OS/!svn/ver/13/branches/b/include/string.h
+END
+unistd.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/2Y_OS/!svn/ver/21/branches/b/include/unistd.h
+END

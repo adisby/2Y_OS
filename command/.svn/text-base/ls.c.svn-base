@@ -1,0 +1,17 @@
+#include "type.h"
+#include "dirent.h"
+#include "stdio.h"
+
+int main()
+{
+	DIR dp;
+	struct dirent * dirp;
+	opendir(".", &dp);
+	printf("%d\n", dp._fd);
+	int i;
+	for (i = 0; i < 19; i++){
+		dirp = readdir(&dp);
+		printf("%s\n", dirp->d_name);
+	}
+	return 0;
+}
